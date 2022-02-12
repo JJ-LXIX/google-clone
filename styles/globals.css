@@ -6,4 +6,26 @@
   .link {
     @apply hover:underline cursor-pointer;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #202124;
+    color: white;
+    font-family: arial, sans-serif;
+  }
+
+  .search {
+    @apply hover:bg-[hsl(220,3%,19%)] focus-within:bg-[#5f6368] border border-[#5f6368];
+  }
+}
+
+.btn {
+  color: #e8eaed;
+  background-color: #303134;
+  @apply p-3 rounded-md ring-gray-500 text-sm hover:ring-1 focus:outline-none active:ring-gray-400;
 }

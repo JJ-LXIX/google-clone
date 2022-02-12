@@ -3,6 +3,9 @@ import Avatar from "../components/Avatar";
 import styles from "../styles/Home.module.css";
 import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 
+import { SearchIcon } from "@heroicons/react/outline";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,8 +16,8 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="flex w-full p-5 justify-between text-sm text-gray-700">
-        <div className="flex space-x-4 items-center">
+      <header className="flex w-full p-5 justify-between text-sm  ">
+        <div className="flex space-x-4 items-center ">
           <p className="link">About</p>
           <p className="link">Store</p>
         </div>
@@ -22,13 +25,33 @@ export default function Home() {
           <p className="link">Gmail</p>
           <p className="link">Images</p>
           {/* Icon */}
-          <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
+          <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-600 cursor-pointer" />
           {/* Avatar */}
           <Avatar url="https://www.nftsstreet.com/wp-content/uploads/2021/11/unnamed-14.png" />
         </div>
       </header>
 
       {/* Body */}
+
+      <form className="flex flex-col items-center mt-44 flex-grow">
+        <Image
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+          height={100}
+          width={300}
+        />
+        <div className="search flex w-full mt-5  max-w-md rounded-full  px-5 py-3 items-center sm:max-w-l lg:max-w-2xl">
+          <SearchIcon className="h-5 mr-3 " />
+          <input
+            type="text"
+            className="focus:outline-none flex-grow bg-inherit"
+          />
+          <MicrophoneIcon className="h-5 ml-3" />
+        </div>
+        <div className="flex flex-col w-1/2 space-y-2 justify-center m-8 sm:space-y-0 sm:flex-row sm:space-x-4">
+          <button className="btn">Google Search</button>
+          <button className="btn">I'm Feeling Lucky</button>
+        </div>
+      </form>
 
       {/* Footer */}
     </div>
