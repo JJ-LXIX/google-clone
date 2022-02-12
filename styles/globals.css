@@ -15,7 +15,7 @@
 
   body {
     background-color: #202124;
-    color: white;
+    color: #e8eaed;
     font-family: arial, sans-serif;
   }
 
@@ -27,5 +27,13 @@
 .btn {
   color: #e8eaed;
   background-color: #303134;
-  @apply p-3 rounded-md ring-gray-500 text-sm hover:ring-1 focus:outline-none active:ring-gray-400;
+  @apply p-3 rounded-lg ring-gray-500 text-sm hover:ring-1 focus:outline-none active:ring-gray-400;
+}
+
+.grid {
+  @apply bg-[#1b1b1d];
+}
+
+.location-footer {
+  @apply px-3 py-2 border-b-[0.1px] border-[#72707042];
 }
