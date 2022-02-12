@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Avatar from "../components/Avatar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -21,7 +22,9 @@ export default function Home() {
           <p className="link">Gmail</p>
           <p className="link">Images</p>
           {/* Icon */}
+
           {/* Avatar */}
+          <Avatar url="https://www.nftsstreet.com/wp-content/uploads/2021/11/unnamed-14.png" />
         </div>
       </header>
 
