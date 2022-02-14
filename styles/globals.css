@@ -20,7 +20,7 @@
   }
 
   .search {
-    @apply hover:bg-[hsl(220,3%,19%)] focus-within:bg-[#5f6368] border border-[#5f6368];
+    @apply hover:bg-[#2f3032] focus-within:bg-[#5f6368] border border-[#5f6368];
   }
 }
 
