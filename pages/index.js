@@ -32,12 +32,12 @@ export default function Home() {
       {/* Header */}
       <header className="flex w-full p-5 justify-evenly text-sm sm:justify-between xl:px-20 ">
         <div className="flex space-x-4 items-center ">
-          <p className="link">About</p>
-          <p className="link">Store</p>
+          <p className="Link">About</p>
+          <p className="Link">Store</p>
         </div>
         <div className="flex space-x-4 px-4 items-center">
-          <p className="link">Gmail</p>
-          <p className="link">Images</p>
+          <p className="Link">Gmail</p>
+          <p className="Link">Images</p>
           {/* Icon */}
           <ViewGridIcon className="h-10 min-w-fit p-2 rounded-full hover:bg-gray-600 cursor-pointer" />
           {/* Avatar */}

@@ -30,7 +30,7 @@ const Header = () => {
             router.push("/");
           }}
         />
-        <form className="flex flex-grow border px-6 py-3 ml-10 mr-5 border-gray-600 rounded-full shadow-lg max-w-3xl items-center bg-[#2f3032]">
+        <form className="flex flex-grow border px-6 py-2 ml-10 mr-5 border-gray-600 rounded-full shadow-lg max-w-2xl items-center bg-[#2f3032]">
           <input
             type="text"
             ref={searchInputRef}
